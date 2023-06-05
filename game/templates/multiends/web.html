@@ -2,16 +2,17 @@
 <head>
 <link rel="stylesheet" href="https://cdn.acwing.com/static/jquery-ui-dist/jquery-ui.min.css">
 <script src="https://cdn.acwing.com/static/jquery/js/jquery-3.3.1.min.js"></script>
-<link rel="stylesheet" href="{% static 'css/game.css'%}">
-<script src="%{% static 'js/dist/game.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/game.css' %}">
+<script src="{% static 'js/dist/game.js' %}"></script>
 </head>
 
 <body style="margin:0">
     <div id="xb_game_12345678"></div>
     <script>
         $(document).ready(function(){
-            let xb_game = xbGame("xb_game_12345678");
+            let xb_game = new xbGame("xb_game_12345678");
         })
+        console.log("hello world");
     </script>
 </body>
 
