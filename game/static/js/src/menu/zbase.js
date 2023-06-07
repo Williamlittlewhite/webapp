@@ -51,31 +51,3 @@ class XbGameMenu{
       this.$menu.hide();
     }
 }
-class XbGamePlayground{
-    constructor(root){
-        this.root = root;
-        this.$playground = $(`<div>游戏界面</div>`);
-        this.hide();
-        this.root.$xb_game.append(this.$playground);
-        this.start();
-    }
-    start(){
-        
-    }
-
-    show(){
-        this.$playground.show();
-    }
-
-    hide(){
-        this.$playground.hide();
-    }
-}
-class xbGame{
-    constructor(id){
-        this.id = id;
-        this.$xb_game = $('#'+id);
-        this.menu = new XbGameMenu(this);
-        this.playground = new XbGamePlayground(this);
-    }
-}
