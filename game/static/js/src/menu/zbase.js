@@ -33,7 +33,8 @@ class XbGameMenu{
     add_listening_events(){
         let outer = this;
         this.$single.click(function(){
-            console.log("click single mode");
+            outer.hide();
+            outer.root.playground.show();
         });
         this.$multi.click(function(){
             console.log("click multi mode");

@@ -1,4 +1,4 @@
-class xbGame{
+export class xbGame{
     constructor(id){
         this.id = id;
         this.$xb_game = $('#'+id);
